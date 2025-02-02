@@ -1,0 +1,58 @@
+[
+  {
+    "ContainingType": "BackendRaith.Controllers.ShiftController",
+    "Method": "GetAllShiftsFromDB",
+    "RelativePath": "Shift/GetAllShiftsFromDB",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Shift, CustomDataBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BackendRaith.Controllers.ShiftController",
+    "Method": "LoadShiftsIntoDB",
+    "RelativePath": "Shift/LoadShiftsIntoDB",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BackendRaith.Controllers.ShiftController",
+    "Method": "SaveShift",
+    "RelativePath": "Shift/SaveShift",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shift",
+        "Type": "Shift",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
