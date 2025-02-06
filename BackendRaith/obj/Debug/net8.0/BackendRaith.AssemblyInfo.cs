@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackendRaith")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dbe6487b12ca123f3836e0b919d4bdfffcfb23f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackendRaith")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackendRaith")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

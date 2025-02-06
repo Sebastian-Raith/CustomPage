@@ -88,3 +88,4 @@ D:\Programming\Projects\CustomPage_V2.0\BackendRaith\bin\Debug\net8.0\selenium-m
 D:\Programming\Projects\CustomPage_V2.0\BackendRaith\bin\Debug\net8.0\WebDriver.dll
 D:\Programming\Projects\CustomPage_V2.0\BackendRaith\bin\Debug\net8.0\SeleniumManager.dll
 D:\Programming\Projects\CustomPage_V2.0\BackendRaith\bin\Debug\net8.0\SeleniumManager.pdb
+D:\Programming\Projects\CustomPage_V2.0\BackendRaith\obj\Debug\net8.0\BackendRaith.sourcelink.json
