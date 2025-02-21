@@ -1,0 +1,13 @@
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\bin\Release\net8.0\CustomDataBase.deps.json
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\bin\Release\net8.0\CustomDataBase.dll
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\bin\Release\net8.0\CustomDataBase.pdb
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.csproj.AssemblyReference.cache
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.AssemblyInfoInputs.cache
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.AssemblyInfo.cs
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.csproj.CoreCompileInputs.cache
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.sourcelink.json
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.dll
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\refint\CustomDataBase.dll
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\CustomDataBase.pdb
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Release\net8.0\ref\CustomDataBase.dll
