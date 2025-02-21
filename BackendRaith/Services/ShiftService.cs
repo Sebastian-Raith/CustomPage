@@ -1,4 +1,5 @@
-﻿using CustomDataBase;
+﻿using BackendRaith.Helper;
+using CustomDataBase;
 using Microsoft.EntityFrameworkCore;
 
 namespace BackendRaith.Services
@@ -18,16 +19,20 @@ namespace BackendRaith.Services
             await _db.SaveChangesAsync();
         }
 
-        public async Task<List<Shift>> GetAllShiftsAsync()
+        public List<ShiftDTO> GetAllShifts()
         {
-            return await _db.Shifts.ToListAsync();
+            List<ShiftDTO> shifts = new List<ShiftDTO>();
+            shifts = _db.Shifts.Select(x => new ShiftDTO().CopyPropertiesFrom(x)).ToList();
+            return shifts;
         }
 
         internal void LoadShiftsIntoDB()
         {
             WebScrapingService webScrapingService = new WebScrapingService();
             var shifts = webScrapingService.ScrapeData();
+
             _db.Shifts.RemoveRange(_db.Shifts.ToList());
+
             foreach (var shift in shifts)
             {
                 _db.Shifts.Add(shift);

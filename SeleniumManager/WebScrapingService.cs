@@ -1,11 +1,9 @@
-﻿using CustomDataBase;
+﻿
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Threading.Tasks;
+
 
 namespace BackendRaith.Services
 {
@@ -16,11 +14,8 @@ namespace BackendRaith.Services
 
         public WebScrapingService()
         {
-
-
-
-            _username = "raithsebastian@gmx.at";
-            _password = "#Sebi2005";
+            _username = Environment.GetEnvironmentVariable("PREP_Username");
+            _password = Environment.GetEnvironmentVariable("PREP_Password");
         }
 
         public List<Shift> ScrapeData()
@@ -92,6 +87,7 @@ namespace BackendRaith.Services
             finally
             {
                 driver.Quit();
+                driver.Dispose();
             }
         }
 
@@ -107,7 +103,6 @@ namespace BackendRaith.Services
         {
             if (DateTime.TryParseExact(time, "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out var result))
             {
-                result.AddHours(1);
                 return result.ToString("HH:mm");
             }
             throw new FormatException($"Invalid time format: {time}");
@@ -117,7 +112,7 @@ namespace BackendRaith.Services
             var formattedDuration = duration.Replace(',', ':').Replace('.', ':');
             if (TimeOnly.TryParseExact(formattedDuration, "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out var result))
             {
-                return result.ToString("HH:mm"); // Format as TIME (HH:mm)
+                return result.ToString("HH:mm");
             }
             throw new FormatException($"Invalid duration format: {duration}");
         }

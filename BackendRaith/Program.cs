@@ -1,7 +1,5 @@
-using BackendRaith.Services;
-using CustomDataBase;
-using Microsoft.EntityFrameworkCore;
-using System;
+
+using BackendRaith.BackgroundTask;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ShiftService>();
-
+builder.Services.AddHostedService<TimedDatabaseUpdate>(); 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

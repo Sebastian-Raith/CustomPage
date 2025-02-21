@@ -10,3 +10,4 @@ D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Debug\net8.0\CustomDa
 D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Debug\net8.0\refint\CustomDataBase.dll
 D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Debug\net8.0\CustomDataBase.pdb
 D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Debug\net8.0\ref\CustomDataBase.dll
+D:\Programming\Projects\CustomPage_V2.0\CustomDataBase\obj\Debug\net8.0\CustomDataBase.sourcelink.json

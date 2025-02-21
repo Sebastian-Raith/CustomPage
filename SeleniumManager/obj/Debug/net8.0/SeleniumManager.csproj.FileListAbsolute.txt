@@ -16,3 +16,4 @@ D:\Programming\Projects\CustomPage_V2.0\SeleniumManager\obj\Debug\net8.0\Seleniu
 D:\Programming\Projects\CustomPage_V2.0\SeleniumManager\obj\Debug\net8.0\refint\SeleniumManager.dll
 D:\Programming\Projects\CustomPage_V2.0\SeleniumManager\obj\Debug\net8.0\SeleniumManager.pdb
 D:\Programming\Projects\CustomPage_V2.0\SeleniumManager\obj\Debug\net8.0\ref\SeleniumManager.dll
+D:\Programming\Projects\CustomPage_V2.0\SeleniumManager\obj\Debug\net8.0\SeleniumManager.sourcelink.json

@@ -1,6 +1,6 @@
-﻿using BackendRaith.Services;
-using CustomDataBase;
-using Microsoft.AspNetCore.Mvc;
+﻿
+
+using BackendRaith.Helper;
 
 namespace BackendRaith.Controllers
 {
@@ -16,18 +16,21 @@ namespace BackendRaith.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> SaveShift(Shift shift)
+        public async Task<IActionResult> SaveShift(ShiftDTO shiftdto)
         {
+            Shift shift = new();
+            shift = shift.CopyPropertiesFrom(shiftdto);
             await _shiftService.AddShiftAsync(shift);
             return Ok();
         }
 
         [HttpGet("[action]")]
-        public async Task<List<Shift>> GetAllShiftsFromDB()
+        public async Task<List<ShiftDTO>> GetAllShiftsFromDB()
         {
-            var shifts = await _shiftService.GetAllShiftsAsync();
+            var shifts = _shiftService.GetAllShifts();
             return shifts.ToList();
         }
+
         [HttpPost("[action]")]
         public string LoadShiftsIntoDB()
         {

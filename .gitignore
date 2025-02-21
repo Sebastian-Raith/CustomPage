@@ -1,1 +1,7 @@
 .vs/
+.BackendRaith/appsettings.json
+
+# Ignore local configuration files
+.env
+appsettings.Development.json
+appsettings.Production.json
