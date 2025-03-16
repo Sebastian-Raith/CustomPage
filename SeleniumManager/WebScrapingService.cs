@@ -110,12 +110,14 @@ namespace BackendRaith.Services
         private string ParseTimeOnly(string duration)
         {
             var formattedDuration = duration.Replace(',', ':').Replace('.', ':');
-            if (TimeOnly.TryParseExact(formattedDuration, "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out var result))
+            if (TimeOnly.TryParseExact(formattedDuration, "H:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out var result) ||
+                TimeOnly.TryParseExact(formattedDuration, "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out result))
             {
                 return result.ToString("HH:mm");
             }
             throw new FormatException($"Invalid duration format: {duration}");
         }
+
 
     }
 }
