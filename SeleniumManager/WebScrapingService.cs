@@ -103,6 +103,7 @@ namespace BackendRaith.Services
         {
             if (DateTime.TryParseExact(time, "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out var result))
             {
+                result = result.AddHours(2);
                 return result.ToString("HH:mm");
             }
             throw new FormatException($"Invalid time format: {time}");
